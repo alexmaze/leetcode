@@ -4,32 +4,33 @@
  */
 var isPalindrome = function (x) {
   if (x < 0) {
-    return false;
+    return false
   }
   if (x < 10) {
-    return true;
+    return true
   }
   if (x < 100) {
-    return (x / (x % 10) === 11);
+    return (x / (x % 10) === 11)
   }
 
-  var scale = 1;
+  var scale = 1
   while (x / scale >= 10) {
-    scale *= 10;
+    scale *= 10
   }
 
   while (x !== 0) {
-    var left = Math.floor(x / scale);
-    var right = x % 10;
+    var left = Math.floor(x / scale)
+    var right = x % 10
 
-    if (left != right)
-      return false;
+    if (left !== right) {
+      return false
+    }
 
-    x = Math.floor((x % scale) / 10);
-    scale /= 100;
+    x = Math.floor((x % scale) / 10)
+    scale /= 100
   }
 
-  return true;
-};
+  return true
+}
 
 module.exports = isPalindrome

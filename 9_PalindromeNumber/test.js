@@ -1,3 +1,3 @@
-var f = require('./index.js');
+var f = require('./index.js')
 
-console.log(f(121));
+console.log(f(121))
