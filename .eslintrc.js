@@ -7,6 +7,7 @@ module.exports = {
     "rules": {
         "camelcase": 0,
         "no-unused-vars": 0,
-        "space-before-function-paren": 0
+        "space-before-function-paren": 0,
+        "quotes": ["error", "double"]
     }
 };
